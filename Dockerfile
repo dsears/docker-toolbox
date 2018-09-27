@@ -9,5 +9,5 @@ COPY .gitconfig /root/.gitconfig
 
 # install ansible
 RUN apt-get -y install python3
-apt-get -y install python3-pip
-pip3 install ansible
+RUN apt-get -y install python3-pip
+RUN pip3 install ansible
